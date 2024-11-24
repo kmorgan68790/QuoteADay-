@@ -1,0 +1,60 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container " id="dashboard-box">
+  <% if (locals.username ) { %>
+<h1> <%= username %> Dashboard</h1>
+<% } %>
+
+  <table class="table table-striped my-3">
+    <tbody>
+      <tr>
+        <th scope="row">Username</th>
+        <td><%= username %> <a href="/edit">update</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Email</th>
+        <td><%= data.account_details.email %> <a href="/edit">update</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Subscription</th>
+        <% if (data.pro === null) { %>
+        <td>No Subscription</td>
+        <% } else {%>
+        <td><%= data.pro %></td>
+        <% } %>
+      </tr>
+      <tr>
+        <th scope="row">Password</th>
+        <td><a href="/password">Reset Password</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped">
+    <tbody>
+      <tr>
+        <th scope="row">Add A Quote</th>
+        <td><a href="/api/quotes">Add</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Favorites</th>
+        <td>Liked (<%=data.public_favorites_count %>)</td>
+      </tr>
+      <tr>
+        <th scope="row">Followers</th>
+        <td>Followers (<%=data.followers  %>)</td>
+      </tr>
+      <tr>
+        <th scope="row">Following</th>
+        <td colspan="2">Following (<%=data.following %>)</td>
+      </tr>
+    </tbody>
+  </table>
+  <form action="/dashboard" method="POST">
+  <button type="submit" class="btn btn-secondary">Logout</button>
+</form>
+</div>
+
+
+
+<%- include("partials/footer.ejs") %>

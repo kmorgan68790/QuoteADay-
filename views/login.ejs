@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<div class="form-container container">
+  <% if (locals.error) { %>
+  <div class="error">
+    <p><%= error %></p>
+  </div>
+  <% } %>
+
+  <h2>Login to access more features</h2>
+  <form action="login" method="POST">
+    <!-- <div id="login-container"> -->
+      <div class="form-group" id="form-group">
+        <label for="login">Email Address</label>
+        <input type="text" id="login" name="login" />
+      </div>
+      <div class="form-group" id="form-group">
+        <label for="password">password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+    <button type="submit" class="btn btn-secondary">Submit</button>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

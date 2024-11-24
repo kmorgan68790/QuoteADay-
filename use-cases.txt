@@ -1,0 +1,33 @@
+Goals: 
+    Session
+    •	Create Session for user. [x]
+    •	Destroy session for user. [x]
+    Users
+    •	Create user - To create a new user. [x]
+    •	Get User – to get a user. [x]
+    •	Update user. [x]
+    •	Password Reset request. [x]
+
+    Quotes
+    •	Get Quote of the Day: author, body, upvotes, downvotes, tags, favorite. []
+    •	List of quotes: same as above. [x]
+    •	Get quote – body, author. [x]
+    •	Fav Quote - To mark a quote as a user's favorite. [x]
+    •	Up/Down vote quote. [x]
+    •	Add quote. [x]
+
+    Error handling  
+    •	with codes and messages[x]
+Stretch Goals:
+    Users
+    •	Reset password. []
+    Quotes 
+    •	Add personal tags to quote. []
+    Activity
+    •	Get Activity - Get the activity of a user, tag, or author, sorted by recency. []
+    •	Delete Activity - To delete an activity entry. []
+    •	Follow Activity - To follow a user, tag, or author. [] /
+    To unfollow a user, tag, or author. []
+    •	Get Followers - To get the followers for a user, tag, or author. []
+    •	Get Following - To get a list of users, tags, and authors a user is following. []
+

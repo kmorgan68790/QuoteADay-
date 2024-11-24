@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+<div class="container" id="signup-container">
+<% if (locals.error) { %>
+  <div class="error">
+    <p><%= error %></p>
+  </div>
+<% } %>
+
+<h2>Don't have an account? Sign up for free!</h2>
+<form action="/signup" method="POST">
+  <div class="form-group" id="form-group">
+    <label for="login " class="me-3">Login</label>
+    <input type="text" id="login" name="login" />
+  </div>
+  <div class="form-group" id="form-group">
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email"/>
+  </div>
+  <div class="form-group" id="form-group">
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" />
+  </div>
+  <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+</form>
+</div>
+<%- include("partials/footer.ejs") %>

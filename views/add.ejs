@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %> <% if (locals.error) { %>
+<div class="error">
+  <p><%= error %></p>
+</div>
+<% } %>
+<div class="form-container container">
+  <form action="/api/quotes" method="POST">
+    <div class="form-group" id="form-group">
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" />
+    </div>
+    <div class="form-group" id="form-group">
+      <label for="body">Quote</label>
+      <input type="text" name="body" id="body" />
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs")  %>
+
+<div class="container my-5" id="about">
+    <h3>
+    About: <a href="/"><em>QuoteADay</em></a>
+    </h3>
+    <p>
+        This is a site that provides user posted quotes or quotes from recognized figures to the site visitor utilizing the public API 
+        <a href=""><em><%=locals.url  %></em></a>. This site also provides users with a personal dashboard and customization for favoriting, downvoting, or upvoting quotes generated
+        on the main search page, as well as updating their email, username, or resetting password. The main search feature operates makes search calls to
+        the API using tags only, such as happy or sad. If visitor does not have account they also have the option of creating one via the signup tab. Once 
+        logged/signed up users can also add their favorite quotes or view quotes from search list on their own page. Hope you enjoy this site.
+    </p>
+</div>
+<%- include("partials/footer.ejs")  %>

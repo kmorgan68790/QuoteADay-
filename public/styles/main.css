@@ -1,0 +1,93 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* header and footer layout */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#links-container {
+  display: flex;
+}
+
+#links-container > li {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+/* main page layout */
+#quotes-container {
+  justify-content: center;
+}
+
+#search-quotes {
+  width: 60%;
+  display: flex;
+}
+
+#search-quotes a {
+  text-decoration: none;
+}
+#search-box {
+  display: flex;
+  justify-content: center;
+}
+
+#stats-container {
+  display: flex;
+  justify-content: center;
+}
+
+#votes-container {
+  display: flex;
+}
+
+#upvotes,
+#downvotes > p {
+  text-align: center;
+}
+
+/* signup  */
+.form-container form,
+#signup-container form {
+  width: 30%;
+}
+
+#form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+/* about */
+#about {
+  width: 50%;
+}
+
+/* dashboard */
+#dashboard-box table {
+  width: 50%;
+}
+
+/* quote */
+#search-quote {
+  justify-content: center;
+}
+
+#search-quote #quote-container {
+  display: flex;
+  justify-content: center;
+}
+
+#text-quote > h5 {
+    text-align: center;
+}
